@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HomeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/home_back"
+        android:orientation="vertical"
+        android:scaleType="fitXY">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_set"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:background="#106dfd"
+                android:src="@mipmap/set"></ImageButton>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3.2"
+            android:background="@drawable/shape_home_user"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/caozuoyuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#414141"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ruzhishijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="9dp"
+                android:text="入职时间："
+                android:textColor="#a5a5a5"
+                android:textSize="15sp" />
+
+
+            <View
+                android:layout_width="293dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="#cacaca" />
+
+            <LinearLayout
+                android:id="@+id/yonghuxinxi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lianxidianhua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="10dp"
+                        android:text="联系电话："
+                        android:textColor="#a6a6a6"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/suoshuqizhan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_marginTop="3dp"
+                        android:text="所属气站："
+                        android:textColor="#a6a6a6"
+                        android:textSize="15sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/btn_back"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:background="#ffffff"
+                        android:layout_marginLeft="80dp"
+                        android:src="@mipmap/go"
+                        android:layout_marginTop="16dp">
+                    </ImageButton>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_home_user"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btn_scdzbs"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:src="@mipmap/scdzbs"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="绑定气瓶条码"
+                        android:textColor="#414141"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/qpda"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:src="@mipmap/qpda"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="气瓶档案"
+                        android:textColor="#414141"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/tjxp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:src="@mipmap/qpjd"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="添加新瓶"
+                        android:textColor="#414141"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_home_user"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/czqjc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:src="@mipmap/czqjc"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="充装前检查"
+                        android:textColor="#414141"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/czjl"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:src="@mipmap/czjl"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="充装记录"
+                        android:textColor="#414141"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/czhjc"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:src="@mipmap/czhjc"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="充装后检查"
+                        android:textColor="#414141"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_home_user"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/yp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:src="@mipmap/qpsr"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="押瓶"
+                        android:textColor="#414141"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/qpps"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:src="@mipmap/qpps"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="气瓶配送"
+                        android:textColor="#414141"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/rhaj"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:src="@mipmap/rhaj"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="入户安检"
+                        android:textColor="#414141"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_home_user"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/shebeikongzhi"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:src="@mipmap/config"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="设备控制"
+                        android:textColor="#414141"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/gyqtcz"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:src="@mipmap/rhaj"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工业气体充装"
+                        android:layout_gravity="center"
+                        android:textColor="#414141"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#414141"
+                        android:textSize="13sp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="佳衡科技有限公司"
+                android:textColor="#afafaf"
+                android:textSize="13sp">
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.qpdaxqActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#1472ff"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btn_back"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:background="#1074fd"
+                    android:src="@mipmap/back"
+                    android:layout_marginTop="5dp">
+                </ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="130dp"
+                    android:text="气瓶档案"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="设备品种"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textSize="20sp"
+                android:focusable="false"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/shebeipinzhong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="制造单位"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:focusable="false"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/zhizaodanwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="检查单位(编码)"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:focusable="false"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/jianchadanwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="出厂编号"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:focusable="false"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/chuchangbianhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="登记代码"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:focusable="false"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/dengjidaima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="自有编号"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:focusable="false"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/ziyoubianhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="气瓶条码"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:focusable="false"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/qipingtiaoma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="气瓶型号"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/qipingxinghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="充装介质"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/chongzhuangjiezhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="制造年月"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/zhizaonianyue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="寿命年限"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/shoumingnianxian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="检验周期(年)"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/jianchazhouqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="末次检验年月"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/mocijianyannianyue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="下次检验年月"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/xiacijianyannianyue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="公称工作压力(MPa)"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/gongchenggongzuoyali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="容积(L)"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/rongji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="设计壁厚(mm)"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/shejibihou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="水实验压力(MPa)"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/shuishiyanyali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="钢瓶自重"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/gangpingzizhong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="气瓶使用状态"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/qipingshiyongzhuangtai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="气瓶状态"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/qipingzhuangtai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="产权性质"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/chanquanxingzhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="产权单位"
+                android:textColor="#bfc6d0"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/chanquandanwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:screenReaderFocusable="false"
+                android:textColorHint="#000000"
+                android:layout_gravity="right" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

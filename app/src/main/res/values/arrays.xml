@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="options">
+        <item>气瓶条码</item>
+        <item>登记代码</item>
+        <item>出厂编号</item>
+        <item>自有编号</item>
+    </string-array>
+
+
+    <string-array name="qpsyzt">
+        <item>空瓶在库</item>
+        <item>重瓶在库</item>
+        <item>派送中</item>
+        <item>客户处</item>
+        <item>回收中</item>
+        <item>重瓶配送站</item>
+        <item>空瓶配送站</item>
+    </string-array>
+
+    <string-array name="qpzt">
+        <item>正常</item>
+        <item>过期</item>
+        <item>报废</item>
+        <item>丢失</item>
+        <item>异常报废</item>
+    </string-array>
+
+    <string-array name="qpzzxkzjjdjcbj">
+        <item>有</item>
+        <item>无</item>
+    </string-array>
+
+    <string-array name="qtmcyqpgybzsfyz">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+
+    <string-array name="jsmcjhxfzsygybz">
+        <item>一致</item>
+        <item>不一致</item>
+    </string-array>
+
+    <string-array name="cqqpsfzy">
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+
+    <string-array name="qpysbzsffhgd">
+        <item>符合</item>
+        <item>不符合</item>
+    </string-array>
+
+    <string-array name="pfdcqklwxsffhgd">
+        <item>无</item>
+        <item>有</item>
+    </string-array>
+
+    <string-array name="qpnywsyyl">
+        <item>有</item>
+        <item>无</item>
+    </string-array>
+
+    <string-array name="wbsfylwbxjqtssqx">
+        <item>无</item>
+        <item>有</item>
+    </string-array>
+
+    <string-array name="aqfjqqbfhaqyq">
+        <item>符合</item>
+        <item>不符合</item>
+    </string-array>
+
+    <string-array name="peisongleixing">
+        <item>发出</item>
+        <item>回收</item>
+    </string-array>
+    <string-array name="kongmanleixing">
+        <item>空瓶</item>
+        <item>重瓶</item>
+    </string-array>
+    <string-array name="qipingguige">
+        <item>2.00</item>
+        <item>5.00</item>
+        <item>10.00</item>
+        <item>15.00</item>
+        <item>50.00</item>
+        <item>40.00</item>
+    </string-array>
+    <string-array name="kehuchaxuntiaojian">
+        <item>客户姓名</item>
+        <item>联系电话</item>
+        <item>身份证号</item>
+        <item>客户编码</item>
+    </string-array>
+
+
+</resources>

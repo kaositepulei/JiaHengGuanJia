@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CzqjcActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#1472ff"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btn_back"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:background="#1074fd"
+                    android:src="@mipmap/back"
+                    android:layout_marginTop="5dp">
+                </ImageButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="122dp"
+                    android:text="充装前检查"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="气瓶条码"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/qipingtiaoma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="请扫描/输入获取气瓶条码"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:layout_gravity="right"
+                android:textAlignment="viewEnd"
+                android:textSize="15sp"
+                android:paddingTop="4dp"/>
+            <ImageButton
+                android:id="@+id/saomiao"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/saomiao"
+                android:background="#f6faff">
+
+            </ImageButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="充前检查时间"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/chongqianjianchashijian"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:hint="请点击选择末次检验年月"
+                android:textAlignment="viewEnd"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="12dp"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="检查人员"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/jcry"
+                android:layout_width="130dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="气瓶制造许可证及监督检查标记"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Spinner
+                android:id="@+id/qpzzxkzjjdjcbj"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/qpzzxkzjjdjcbj"
+                android:overlapAnchor="false"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="气体名称与气瓶钢印标志是否一致"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/qtmcyqpgybzsfyz"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/qtmcyqpgybzsfyz"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="警示名称及化学分子式与钢印标志"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/jsmcjhxfzsygybz"
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="产权气瓶是否自有"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/cqqpsfzy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/cqqpsfzy"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="气瓶颜色标志是否符合规定"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/qpysbzsffhgd"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="瓶阀的出气口螺纹型式是否符合规定"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/pfdcqklwxsffhgd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/pfdcqklwxsffhgd"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="气瓶内有无剩余压力"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/qpnywsyyl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/qpnywsyyl"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="外表是否有裂纹、变形及其他损伤缺陷"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/wbsfylwbxjqtssqx"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/wbsfylwbxjqtssqx"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="气瓶在检验有效期内"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/qpzjyyxqn"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:hint="请点击选择气瓶在检验有效期内"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"
+                android:textAlignment="viewEnd"
+                android:layout_marginRight="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_list_list"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="安全附件齐全并符合安全要求"
+                android:textColor="#000000"
+                android:textColorLink="#000000"
+                android:textColorHint="#000000"
+                android:focusable="false"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/aqfjqqbfhaqyq"
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="294dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/but_sub"
+            android:text="提交">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="294dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="19dp"
+            android:background="#ffffff"
+            android:text="取消">
+        </Button>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

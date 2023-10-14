@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/login_back"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="佳衡管家系统"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V1.0"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/shape_login_form"
+            android:orientation="vertical"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="53dp"
+                android:text="欢迎登录"
+                android:textColor="#262f52"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="10dp"
+                android:text="Welcome to Qianku cloud"
+                android:textColor="#b9c1cc"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="294dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="78dp"
+                android:layout_gravity="center"
+                android:background="#f6faff"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@mipmap/user" />
+
+                <EditText
+                    android:id="@+id/input_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:hint="请输入账号"
+                    android:textColor="#000000"
+                    android:textColorLink="#b9c1cc"
+                    android:maxLength="11"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/input_pass"
+                android:layout_width="294dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="19dp"
+                android:background="#f6faff"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="13dp"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@mipmap/password" />
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:hint="请输入密码"
+                    android:textColor="#000000"
+                    android:textColorLink="#b9c1cc"
+                    android:inputType="textPassword"
+                    android:maxLength="11"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="294dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="19dp"
+                android:background="#106dfd"
+                android:text="登录">
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.SzcsjActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ShebeikongzhiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ScqppsjllbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CzhjcActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NumberPickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GyqtczActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.YpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.KhxqRhajActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.KhxqYpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ScqppsjlActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.KhxqQppsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.XzkhActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.czjlxqActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CzcxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CzjlActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CzqjcActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TjxpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.qpdaxqActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.QpdaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.qiehuanyonghuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ScanfDevActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.yhxxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ScdzbsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.example.SCAN_RESULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.scanner.broadcast" />
+                <action android:name="android.intent.action.scanner.RFID" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
